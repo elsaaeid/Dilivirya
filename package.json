@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    
     "sass": "node-sass assets/main/css/main.scss assets/main/css/main.css watch"
   },
   "keywords": [],
