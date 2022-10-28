@@ -1,0 +1,103 @@
+@import "../mixin/mixins.scss";
+
+
+.page-wrapper{
+	border-radius: 20px;
+	display:flex;
+	position: relative;
+}
+
+#myUL {
+	display: none;
+	background: $main-color;
+	padding: 2px;
+	width: 93%;
+  	list-style: none;
+
+  & li {
+  	list-style: none;
+	color: $black;
+	& & a {
+	  color: $black;
+	  text-align: center;
+	}
+  }
+}
+.input-group,
+.nav-group{
+  background: $main-color;
+  display: flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  width: 93%;
+
+  @include very-medium {
+	width: 10rem;
+	margin-left: -21px;
+} 
+  @include medium {
+	width: 10rem;
+} 
+  > .form-floating:not(:first-child) > .form-control, 
+  > .form-floating:not(:first-child) > .form-select, 
+  > :not(:first-child):not(.dropdown-menu):not(.form-floating):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+  	border: 0;
+  	border-radius: 10px;
+  	color: $text-grey;
+  }
+  .btn{
+  	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-image: url('../../images/sprite-sheet.png');
+  }
+  &:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), 
+  &:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
+  &:not(.has-validation) > .form-floating:not(:last-child) > .form-select,
+  &:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating){
+  	border-radius: 10px;
+  }
+  #button-search{
+	background-position: -2px -42px;
+  }
+  #button-notification{
+	background-position: -42px -42px;
+	position: relative;
+	margin-left: auto;
+	.bill{
+		display: block;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+  }
+}
+/*
+	btn
+*/
+
+.btn-gold{
+	color: $main-color;
+	background-color: $grey-dark;
+	&:hover,&:focus{
+		color: $gold;
+		background-color: $gold-light;
+	}
+}
+.btn-lavender{
+	color: $lavender-dark;
+	background-color: $lavender-light;
+	&:hover,&:focus{
+		color: $main-color;
+		background-color: $lavender-dark;
+	}
+}
+@media (min-width: 820px) {
+	.nav-group{
+		margin-left: -19px;
+	}
+}

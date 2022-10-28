@@ -1,0 +1,269 @@
+@import "../mixin/mixins.scss";
+
+/*-----CalendarStatus------*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  
+  & select {
+    display: none; 
+  }
+}
+  .select-selected {
+    background-color: $main-color;
+  
+  &:after {
+    border: 6px solid transparent;
+    border-color: #484C53 transparent transparent transparent;
+}
+  
+  &.select-arrow-active:after {
+    border-color: transparent transparent $black transparent;
+  }
+}
+  .select-items div, .select-selected {
+    color: $text-grey;
+    padding: 10px 25px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 28px;
+    width: 148px;
+    font-weight: bold;
+
+    @include extra-small {
+      font-size: 10px;
+      width: 100px;
+    }
+}
+  
+.select-items {
+  background-color: #fff;
+  color: #484C53;
+  z-index: 99;
+  position: absolute;
+  padding: 9px 0px 0px;
+  border-radius: 10px;
+  width: 150px;
+  @include extra-small {
+    width: 100px;
+  }
+}
+  .select-hide {
+    display: none;
+  }
+
+  select,
+  button {
+	font: {
+	  family: inherit;
+	  weight: 700;
+	  size: 1.02rem;
+	}
+	border-radius: 20px;
+	outline: none;
+	border: 0;
+  padding: 12px 12px;
+  }
+  
+select#extra-select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: none;
+}
+
+
+/*-------------------date-Calendar-Style-----------------------*/
+
+.icon-calendar {
+    font-size: $icon-size;
+    background-color: $gold-light;
+    color: $gold;
+    width: 45px;
+    text-align: center;
+    height: 45px;
+    border-radius: 10px;
+    margin-inline: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.calender-content {
+  visibility: hidden;
+  transition: 0.3ms all ease-in-out;
+}
+.myStyle {
+  visibility: visible;
+}
+section.content-income.w-100 {
+    position: relative;
+
+.container-calendar {
+  width: 21%;
+	background-color: $main-color;
+	border-radius: 10px;
+    margin: 0 auto;
+    overflow: auto;
+	--side-padding: 20px; // padding to be applied to the side of the calendar
+	--accent-br: 15px; // border-radius for accents under dates on hover
+	box-shadow: 0 15px 20px -3px rgba(189, 189, 189, 0.35);
+  position: absolute;
+  z-index: 1;
+
+  @include extra-small {
+    width: 70%;
+  }
+  @include very-very-small {
+    width: 54%;
+  }
+
+  @include very-small {
+    width: 51%;
+  }
+
+  @include small {
+    width: 45%;
+  }
+  @include very-very-medium {
+    width: 35%;
+  }
+  @include very-medium {
+    width: 29%;
+  }
+  @include medium {
+    width: 29%;
+  }
+  @include large {
+    width: 26%;
+  }
+  @include very-large {
+    width: 26%;
+  }
+  @include extra-large {
+    width: 20%;
+  }
+	.calendarHead {
+		font-weight: bold;
+    padding: 21px;
+    h4 span.toSpan {
+		color: $text-grey;
+		border-bottom: 1px solid $text-grey;
+		margin-left: 22px;
+	}
+
+}
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+	border: none;
+}
+
+table#calendarTo tbody#calendar-body {
+  display: none;
+}
+.table-calendar td, .table-calendar th {
+    padding: 5px;
+    border: none;
+    text-align: center;
+    vertical-align: top;
+	  background: $main-color;
+}
+
+.date-picker.selected {
+    font-weight: bold;
+    background-color: $bg-color;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-container-calendar {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+
+& #month {
+  margin-inline: 27px;
+}
+}
+
+.footer-container-calendar {
+    margin-top: 1em;
+    border-top: none;
+    padding: 10px 0;
+}
+
+.footer-container-calendar select {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: $grey-dark;
+    color: $black;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 1em;
+}
+
+.footer-container-calendar label { 
+  padding-left: 80px
+}
+}
+
+.FromToShow {
+  border-top: 1px solid $text-grey;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.showAfter {
+  padding: 14px;
+
+  @include extra-small {
+    margin-left: -32px;
+  }
+
+ & h3 {
+  margin-inline: 38px;
+  font-size: 19px;
+
+  @include extra-small {
+    font-size: 15px;
+  }
+}
+& .MonthAndYear {
+  background: $grey-dark;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+
+  @include extra-small {
+    font-size: 9px;
+    padding: 5px;
+  }
+}
+}
+.result {
+  margin-left: -46px;
+}
+}
+
+
+@media screen and (min-width: 280px) {
+  .calendarHead h4 {
+    font-size: 15px;
+}
+section.content-income.w-100 .container-calendar .button-container-calendar {
+  font-size: 9px;
+  margin-inline: -16px;
+}
+table#calendar {
+  font-size: 12px;
+}
+}

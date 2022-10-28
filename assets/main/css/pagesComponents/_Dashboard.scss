@@ -1,0 +1,138 @@
+@import "./CalendarComponent";
+
+  /*-------------------TotalIncome----------------------*/
+  .card.income.d-flex.flex-column {
+    padding: 25px;
+
+  i.bx.bx-money {
+    font-size: $icon-size;
+    color: $gold;
+}
+  .incomeDesc {
+    font-family: revert;
+    font-size: 20px;
+}
+.desc p {
+  font-size: 17px;
+  margin-top: 3px;
+}
+span.money {
+  font-weight: bold;
+  color: $gold;
+}
+span.upPer {
+  margin-left: 32px;
+  color: $green;
+}
+  }
+
+  /*-------------------------overview-------------------------------*/
+  .head {
+    margin: 29px 0px 15px;
+}
+  .subCard {
+    margin-top: 30px;
+    background-color: $main-color;
+    border-radius: 10px;
+
+    h5.card-title i {
+    color: $gold;
+    font-size: $icon-size;
+    font-weight: 500;
+
+}
+h5.card-title span {
+  margin-inline: 14px;
+}
+  }
+  span.countOrders {
+    font-weight: bold;
+    margin-inline: 7px;
+}
+span.upPer {
+  color: $green;
+}
+
+
+.subCard.overview:hover {
+  background-color: $bg-color;
+  color: $main-color;
+  box-shadow: 0 15px 20px -3px rgba(171, 68, 255, 0.35);
+  transition: 0.3 all ease-in-out;
+}
+.active {
+  background-color: $bg-color;
+  color: $main-color;
+  box-shadow: 0 15px 20px -3px rgba(171, 68, 255, 0.35);
+  transition: 0.3 all ease-in-out;
+}
+
+/*----------------------orders-----------------------*/
+section#orders {
+  display: block;
+}
+.multiShows {
+  margin-bottom: 30px;
+
+.request {
+  display: flex;
+  padding: 2px 13px;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+
+  span.ordIcon {
+    border-radius: 3px;
+    font-size: 19px;
+    padding: 4px;
+}
+span.iconOrder1 {
+  color: $green;
+  background-color: $greenHov;
+}
+span.iconOrder2 {
+  color: $red;
+  background-color: $redHov;
+}
+span.iconOrder3 {
+  color: $black;
+  background-color: $text-light;
+}
+& h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 13px;
+}
+&  p {
+  margin-left: 14px;
+  font-size: 18px;
+  margin-top: 11px;
+  color: $gold;
+
+  span.count {
+    font-weight: bold;
+}
+}
+}
+}
+
+table {
+  width: 100%;
+  & thead {
+    background: $grey-dark;
+
+    & tr th {
+      font-weight: normal;
+      padding-inline: 5px;
+  }
+}
+tbody tr td {
+  font-weight: normal;
+  border-bottom: 1px solid $grey-dark;
+  padding-inline: 5px;
+}
+td.totalClient {
+  color: $gold;
+}
+}

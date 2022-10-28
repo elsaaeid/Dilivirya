@@ -1,0 +1,264 @@
+div#content {
+    position: relative;
+
+
+
+.arrowBackIcon {
+    margin-top: -22px;
+    color: $main-color;
+    background-color: $grey-dark;
+    margin-top: 10px;
+}
+.orderUpdate button {
+    border: navajowhite;
+    background: $gold;
+    color: $main-color;
+    border-radius: 10px;
+    padding: 12px;
+    margin-right: 15px;
+}
+.order-title h3 {
+    font-size: 25px;
+}
+
+table#table_orders tbody tr:hover {
+    background: $gold-light;
+}
+table#table_orders tbody tr td img {
+    cursor: pointer;
+}
+
+legend {
+
+    padding: 16px;
+
+    & h6 {
+        margin: auto;
+        font-size: 20px;
+
+        @include extra-small {
+            font-size: 10px;
+        }
+    }
+
+     
+    .info-icons {
+        font-size: 20px;
+        @include extra-small {
+            margin-right: 8px;
+            font-size: 10px;
+        }
+        @include very-small {
+            font-size: 14px;
+            margin-right: 7px;
+        }
+    }
+
+    span.downloadIcon {
+        background: $gold;
+        color: $main-color;
+        font-size: 20px;
+        
+        @include extra-small {
+            font-size: 10px;
+            margin-right: 10px;
+        }
+        @include very-small {
+            font-size: 14px;
+            margin-right: 24px;
+        }
+    }
+    
+}
+.sameProps {
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+select {
+    transition: 1s height ease-in-out;
+    background: $grey-dark;
+    overflow: hidden;
+    padding-top: 15px;
+
+& option a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+}
+
+.order-table{
+	width: 100%;
+	border-collapse: collapse;
+
+th span.download {
+        background: #009160;
+        font-size: 20px;
+        text-align: center;
+        padding: 6px;
+
+& i {
+    color: $main-color;
+}
+}
+}
+
+.select-items div, .select-selected {
+    background: #e6e6e6;
+    display: flex;
+    justify-content: center;
+
+    
+    @include extra-small {
+        font-size: 8px;
+        width: 52px;
+    }
+    @include very-very-small {
+        font-size: 8px;
+        width: 52px;
+    }
+    @include very-small {
+        font-size: 7px;
+        width: 64px;
+     }
+    }
+
+
+option {
+    padding-top: 10px;
+    transition: 1s height ease-in-out;
+&:hover {
+    background: var(--optionBgHov-color);
+}
+}
+.order-container-top {
+    position: absolute;
+    display: none;
+    top: 0px;
+    background: $main-color;
+    width: 100%;
+    height: 100vh;
+
+    .cancel-order {
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #e6e6e6;
+    }
+.client-content {
+
+
+    @include extra-small {
+       padding-inline: 16px;
+    }
+
+.clientOrderInfo {
+.orderTotal {
+    background: #38b389;
+    color: #fff;
+    width: 90%;
+    padding: 6px;
+    margin: auto;
+    border-radius: 9px;
+
+    & h6 {
+
+        @include extra-small {
+            font-size: 10px;
+        }
+        @include very-very-small {
+            font-size: 11px;
+         }
+    }
+
+    & span {
+
+        @include extra-small {
+            font-size: 10px;
+            margin-right: 8px;
+        }
+        @include very-very-small {
+            font-size: 11px;
+         }
+    }
+}
+}
+}
+}
+
+.clientInfo, .clientOrderInfo {
+    border-radius: 9px;
+    border: 1px solid #e6e6e6;
+    width: 50%;
+    height: 96vh;
+}
+
+
+span.mapIcon {
+    background-color: $gold-light;
+    color: $gold;
+    font-size: 20px;
+
+    @include extra-small {
+        font-size: 10px;
+    }
+&:hover {
+    background-color: $hovFocus-color;
+}
+}
+span.userIcon {
+    background-color: $bgHov-color;
+    color: $bg-color;
+    font-size: 20px;
+
+    @include extra-small {
+        font-size: 10px;
+    }
+    &:hover {
+    background-color: $lavender-dark;
+}
+}
+
+.input-group.inputProps {
+    width: 150px;
+    margin: auto;
+
+    @include extra-small {
+       width: 100px;
+    }
+}
+.input-group.inputProps input {
+    border: none;
+    background:  $grey-dark;
+}
+
+.inputGroupContainer {
+    margin-left: 7px;
+}
+.input-group.TimeinputProps {
+    margin: auto;
+
+    @include extra-small {
+        width: 100px;
+     }
+}
+.input-group.TimeinputProps input {
+    background: $grey-dark;
+    border: none;
+    padding: 8px;
+    margin: auto;
+
+    @include extra-small {
+        width: 100px;
+     }
+}
+textarea.form-control.inputProps {
+    background: $grey-dark;
+    border: none;
+    padding: 8px;
+    margin: auto;
+}
+}

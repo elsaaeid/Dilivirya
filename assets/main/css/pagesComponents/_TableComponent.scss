@@ -1,0 +1,41 @@
+
+
+table.dataTable{
+	border: 0;
+	margin: 0;
+	thead{
+		th,
+		td{
+			border-bottom: 1px solid $grey;
+			background-color: $grey;
+			font-weight: normal;
+			text-transform: capitalize;
+			color: $text-grey;
+			font-size: 14px;
+		}
+		.sorting_asc ,.sorting_desc{
+		  background-image: url("sort_asc.png");
+		  filter: grayscale(100);
+		}
+	}
+	tbody{
+		th,
+		td{
+			border-bottom: 1px solid $grey;
+			text-transform: capitalize;
+			color: $text-grey;
+			font-size: 14px;
+		}
+	}
+	~ .dataTables_paginate .paginate_button{
+		border-radius: 20px;
+		padding: 0.25em 0.5em;
+		font-size: 12px;
+		margin-top: 7px;
+	}
+	~ .dataTables_info{
+		position: absolute;
+		bottom: 0;
+		right: 70px;
+	}
+}

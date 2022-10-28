@@ -1,0 +1,148 @@
+@import "../mixin/mixins.scss";
+
+/*
+sidebar
+*/
+.sidebar{
+	background-color: $bg-color;
+	min-height: 100vh;
+	width: 20%;
+	
+	@include extra-small {
+		width: 72%;
+	}
+	@include very-medium {
+		width: 25%;
+	  }
+	
+	.logo-wrapper{
+		padding: 50px 0;
+		h4{
+			font-weight: 700;
+			letter-spacing: 0.2em;
+		}
+	}
+	.side-list{
+		li{
+			.main-link{
+				display: flex;
+				padding-right: 20px;
+				position: relative;
+				.icon{
+					width: 50px;
+					height: 40px;
+					display: inline-block;
+					position: relative;
+					&:before{
+						content: '';
+						width: 20px;
+						height: 20px;
+						position: absolute;
+						top: 0px;
+						left: 10px;
+						border-radius: 3px;
+						transform: translate(50%,50%);
+						background-repeat: no-repeat;
+						background-image: url('../../images/sprite-sheet.png');
+					}
+					&.icon-dashboard:before{background-position: 0px 0px;}
+					&.icon-orders:before{background-position: -40px 0px;}
+					&.icon-admins:before{background-position: -80px 0px;}
+					&.icon-inventory:before{background-position: -120px 0px;}
+					&.icon-Marketing:before{background-position: -160px 0px;}
+					&.icon-Clients:before{background-position: 0px -20px;}
+					&.icon-stories:before{background-position: -40px -20px;}
+					&.icon-profile:before{background-position: -80px -20px;}
+					&.icon-customer:before{background-position: -120px -20px;}
+					&.icon-settings:before{background-position: -160px -20px;}
+				}
+				.text{
+					line-height: 40px;
+					color: $main-color;
+					text-transform: capitalize;
+					font-weight: 600;
+				}
+				&:hover,&.active{
+					background-color: $bgHov-color;
+					.icon{
+						border-left: 4px solid $gold;
+						&:before{
+							background-color: $main-color
+						}
+						&.icon-dashboard:before{background-position: -20px 0px;}
+						&.icon-orders:before{background-position: -60px 0px;}
+						&.icon-admins:before{background-position: -100px 0px;}
+						&.icon-inventory:before{background-position: -140px 0px;}
+						&.icon-Marketing:before{background-position: -180px 0px;}
+						&.icon-Clients:before{background-position: -20px -20px;}
+						&.icon-stories:before{background-position: -60px -20px;}
+						&.icon-profile:before{background-position: -100px -20px;}
+						&.icon-customer:before{background-position: -140px -20px;}
+						&.icon-settings:before{background-position: -180px -20px;}
+					}
+				}
+			}
+			&.dropdown{
+				.main-link{
+					&:after{
+						content: '';
+						border: 0;
+						width: 20px;
+						height: 20px;
+						transform: translate(50%,50%) scale(0.4);
+						background-repeat: no-repeat;
+						margin-left: auto;
+						background-image: url(../../images/sprite-sheet.png);
+						background-position: -100px -180px;
+					}
+					&.collapsed{
+						&:after{
+						background-position: -80px -180px;
+						}
+					}
+				}
+				ul{
+					padding-left: 60px;
+					li{
+						a{
+							color: $main-color;
+							display: block;
+							&:hover,&:active{
+								color: $gold;
+							}
+						}
+						&:hover,&:active{
+							color: $gold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*--------------Responsive--------------------------------------*/
+
+@media (max-width: 991px) and (min-width: 768px){
+	.sidebar{
+		.logo-wrapper{
+			padding: 20px 0;
+		}
+	}
+}
+@media (max-width: 767px){
+	.sidebar{
+		position: fixed;
+		top: 0;
+		left: 0;
+		transform:translateX(-100%);
+		z-index: 5;
+		border-radius: 0 20px 20px 0;
+		.logo-wrapper{
+			padding: 10px 0;
+		}
+		&.open{
+			transform:translateX(0%);
+		}
+	}
+}
