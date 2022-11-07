@@ -6,20 +6,29 @@
 	display:flex;
 	position: relative;
 }
-
+.search-content {
+	position: relative;
+}
 #myUL {
 	display: none;
 	background: $main-color;
 	padding: 2px;
 	width: 93%;
   	list-style: none;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	z-index: 3;
 
   & li {
   	list-style: none;
 	color: $black;
-	& & a {
-	  color: $black;
-	  text-align: center;
+	&:hover {
+		background-color: $text-light;
+	}
+	& a {
+		padding: 10px;
+		color: $bg-color;
+	  	text-align: center;
 	}
   }
 }

@@ -141,17 +141,26 @@ sidebar
   display: flex;
   position: relative; }
 
+.search-content {
+  position: relative; }
+
 #myUL {
   display: none;
   background: #fff;
   padding: 2px;
   width: 93%;
-  list-style: none; }
+  list-style: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 3; }
   #myUL li {
     list-style: none;
     color: #484C53; }
-    #myUL li #myUL li a {
-      color: #484C53;
+    #myUL li:hover {
+      background-color: #b4b4b4; }
+    #myUL li a {
+      padding: 10px;
+      color: #7952B3;
       text-align: center; }
 
 .input-group,
