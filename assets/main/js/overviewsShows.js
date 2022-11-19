@@ -11,8 +11,6 @@ card.forEach((item) =>
   item.addEventListener('click',activeLink));
 
 
-
-
   /*-------------------------------overviewChart------------------------------*/
   const cardOrders = document.getElementById('cardOrders');
   const cardOffers = document.getElementById('cardOffers');

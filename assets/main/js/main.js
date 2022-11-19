@@ -1,31 +1,14 @@
-    var navclick = document.getElementById("menu-toggle");
 
-    navclick.onclick = function() {
-        document.getElementById("sidebar").classList.toggle('open');
-    }
+//  Form group
 
-///////////////////////
-///////////////////////
-
-    //  Form group
-
-//////////////////////
-//////////////////////
 $(document).ready(function() {
     $('.select2').select2({
         minimumResultsForSearch: 2
     });
 });
 
+//  Datatable
 
-
-///////////////////////
-///////////////////////
-
-    //  Datatable
-
-//////////////////////
-//////////////////////
 $(document).ready( function () {
     $('.full-table').DataTable({
         "searching": false,

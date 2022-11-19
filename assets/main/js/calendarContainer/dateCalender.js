@@ -52,3 +52,6 @@
 
 
         mainCalendar.innerHTML = mainCalendarContent;
+
+
+        /*-----------------.date-picker.selected----------------------*/

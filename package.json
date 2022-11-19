@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
     "sass": "node-sass assets/main/css/main.scss assets/main/css/main.css watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "tailwindcss": "^3.2.4"
   },
   "dependencies": {
     "chart.js": "^3.9.1"

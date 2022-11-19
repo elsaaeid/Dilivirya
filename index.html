@@ -25,324 +25,134 @@
   <div class="page-wrapper">
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar">
-      <div class="logo-wrapper text-center">
-        <img src="assets/images/logo.png" alt="logo" />
-        <h4 class="text-light">Dilivirya</h4>
-      </div>
-      <ul class="side-list list-unstyled text-light">
-        <li>
-          <a href="./index.html" class="main-link">
-            <span class="icon icon-dashboard"></span>
-            <span class="text">dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="./orders.html" class="main-link">
-            <span class="icon icon-orders"></span>
-            <span class="text">orders</span>
-          </a>
-        </li>
-        <li>
-          <a href="/#" class="main-link">
-            <span class="icon icon-admins"></span>
-            <span class="text">admins</span>
-          </a>
-        </li>
-        <li class="dropdown">
-          <a class="main-link collapsed" data-bs-toggle="collapse" href="/#" role="button" aria-expanded="false" aria-controls="inventory">
-            <span class="icon icon-inventory"></span>
-              <span class="text">inventory</span>
-          </a>
-
-          <ul class="collapse multi-collapse" id="inventory">
-            <li><a href="">Classifications</a></li>
-            <li><a href="">Unit of Measurement</a></li>
-            <li><a href="">Warehouses</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Inventory count</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="main-link collapsed" data-bs-toggle="collapse" href="/#" role="button" aria-expanded="false" aria-controls="Marketing">
-            <span class="icon icon-Marketing"></span>
-              <span class="text">Marketing</span>
-          </a>
-
-          <ul class="collapse multi-collapse" id="Marketing">
-            <li><a href="">Coupons</a></li>
-            <li><a href="">Offers</a></li>
-            <li><a href="">Push Notifications</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-Clients"></span>
-            <span class="text">Clients</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-stories"></span>
-            <span class="text">stories</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-profile"></span>
-            <span class="text">my profile</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-customer"></span>
-            <span class="text">customer support</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-settings"></span>
-            <span class="text">general settings</span>
-          </a>
-        </li>
-      </ul>
+      
     </div>
     <!-- Page content -->
     <div id="page-content" class="page-content">
       <!-- NavBar -->
-      <nav class="navbar">
-        <div class="container-fluid p-0">
-          <div class="top-nav w-100 d-flex flex-row justify-content-between align-items-center d-sm-flex d-md-none d-lg-none d-xl-none d-xxl-none">
-            <span class="navbar-brand mb-0 h1">
-              <img src="assets/images/logo.png" alt="logo" />
-            </span>
-            <a class="btn btn-gold" role="button" id="menu-toggle"><i class="bi bi-list"></i></a>
-          </div>
-          <div class="nav-main w-100">
-            <div class="row">
-              <div class="col-md-9 col-sm-8">
-                <div class="input-group mb-3">
-                  <button class="btn btn-lavender" type="button" id="button-search">                    
-                  </button>
-                  <input type="text" onkeyup="myFunction()" class="form-control" id="myInput" placeholder="Search ..." aria-label="" aria-describedby="button-search">                 
-                </div>
-                <div class="search-content">
-                  <ul id="myUL">
-                    <li><a href="#">Adele</a></li>
-                    <li><a href="#">Agnes</a></li>
-                  
-                    <li><a href="#">Billy</a></li>
-                    <li><a href="#">Bob</a></li>
-                  
-                    <li><a href="#">Calvin</a></li>
-                    <li><a href="#">Christina</a></li>
-                    <li><a href="#">Cindy</a></li>
-                  </ul>
-                </div> 
-              </div>
-              <div class="col-md-3 col-sm-4">
-                <div class="nav-group mb-3 d-flex">
-                  <div class="user-menu">
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0">
-                        <img src="assets/images/users/user.png" alt="user image">
-                      </div>
-                      <div class="flex-grow-1 mx-1">
-                        <span class="user-name">Kenan JADDENE</span>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="btn btn-gold" type="button" id="button-notification">
-                    <span class="bg-danger bill"></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <nav id="navbar" class="navbar">
+        
       </nav>
 
-      <!-- Content Income -->
-
-      <section class="content-income w-100">
-        <div class="header-wrapper mb-2 d-flex flex-row justify-content-around align-items-center">
-          <div class="head-total d-flex flex-row justify-content-start"><h3>Total income<span>:</span></h3></div>
+        <!-- Content Income -->
+        <div class="content" id="content">
+          <section class="content-income w-100">
+            <div class="header-wrapper mb-2 d-flex flex-row justify-content-around align-items-center">
+            <div class="head-total d-flex flex-row justify-content-start"><h3>Total income<span>:</span></h3></div>
             <div class="calender-code d-flex flex-row">
-              <div>
-                <span class="icon-calendar" onclick="calendarFunction()"><i class="bi bi-calendar-fill" id="calendarIcon"></i></span>
-                <div id="containerCalendar" class=" calender-content">
-                  <div class="container-calendar">
-                    <div class="calendarHead d-flex flex-row align-items-center">
-                      <h4 id="fromButton" onclick="choice1()">From</h4>
-                      <h4><span class="toSpan" id="toButton" onclick="choice2()">To</span></h4>
-                    </div>
-                    <div id="mainCalendar"></div>
+            <div>
+              <span class="icon-calendar" onclick="calendarFunction()"><i class="bi bi-calendar-fill" id="calendarIcon"></i></span>
+              <div id="containerCalendar" class=" calender-content">
+                <div class="container-calendar">
+                  <div class="calendarHead d-flex flex-row align-items-center">
+                    <h4 id="fromButton" onclick="choice1()">From</h4>
+                    <h4><span class="toSpan" id="toButton" onclick="choice2()">To</span></h4>
                   </div>
+                  <div id="mainCalendar"></div>
                 </div>
-              </div>          
-                <div class="calender-status">
-                    <select id="extra-select">
-                      <option value="0">This week</option>
-                      <option value="1">Today</option>
-                      <option value="2">This week</option>
-                      <option value="3">This month</option>
-                      <option value="4">This year</option>
-                    </select>
-                </div> 
+              </div>
+            </div>          
+              <div class="calender-status">
+                  <select id="extra-select">
+                    <option value="0">This week</option>
+                    <option value="1">Today</option>
+                    <option value="2">This week</option>
+                    <option value="3">This month</option>
+                    <option value="4">This year</option>
+                  </select>
+              </div> 
             </div>
-        </div>
-        <div class="card income d-flex flex-column">
-          <div class="row">
+            </div>
+            <div class="card income d-flex flex-column">
+            <div class="row">
             <div class="col-lg-1 icon"><i class='bx bx-money'></i></div>
             <div class="col-lg-11 incomeDesc">Total income that you earned this week :</div>
-          </div>
-          <div class="desc">
+            </div>
+            <div class="desc">
             <p>Total Income : <span class="money">50,000 USD</span> <span class="upPer">+34% <i class='bx bx-up-arrow-alt'></i></span></p>
-          </div>
-        </div>
-      </section>
-      <!-- Content MultiCardsOverview -->
-      <section class="content-overview w-100">
-        <div class="overview-wrapper mb-2">
-          <div class="row">
-            <div class="col-lg-12 head">
-              <h3>
-                Overview<span>:</span>
-              </h3>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="subCard overview active" id="cardOrders">
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-start align-items-center"><i class='bx bxs-detail'></i> <span>Orders count</span></h5>
-                  <p class="card-text">Total Orders :<span class="countOrders">252</span> <span class="upPer">+34% <i class='bx bx-up-arrow-alt'></i></span></p>
-                  <span> Last week : 200</span>
-                </div>
-              </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="subCard overview" id="cardOffers">
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-start align-items-center"><i class='bx bxs-purchase-tag'></i> <span>Offers count</span></h5>
-                  <p class="card-text">Total offers :<span class="countOrders">252</span></p>
-                  <span> Last week : 200</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="subCard overview" id="cardViews">
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-start align-items-center"><i class="bi bi-eye-fill"></i> <span>Story views</span></h5>
-                  <p class="card-text">Total views :<span class="countOrders">252</span> <span class="upPer">+34% <i class='bx bx-up-arrow-alt'></i></span></p>
-                  <span> Last week : 200</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="subCard overview" id="cardClients">
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-start align-items-center"><i class="bi bi-people-fill"></i><span>Clients count</span></h5>
-                  <p class="card-text">Total Clients :<span class="countOrders">252</span> <span class="upPer">+34% <i class='bx bx-up-arrow-alt'></i></span></p>
-                  <span> Last week : 200</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="subCard overview" id="cardProducts">
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-start align-items-center"><i class="bi bi-columns-gap"></i> <span>Products count</span></h5>
-                  <p class="card-text">Total product :<span class="countOrders">252</span></p>
-                  <span> Last week : 200</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Orders Content-->
-      <section class="collapse multi-collapse" id="orders">
-          <div class="multiShows">
+            </section>
+            <!-- Content MultiCardsOverview -->
+            <section class="content-overview w-100">
+            <div class="overview-wrapper mb-2">
             <div class="row">
-              <div class="col-lg-12 head">
-                <h3>
-                  Orders Live Data<span>:</span>
-                </h3>
-              </div>
+            <div class="col-lg-12 head">
+            <h3>
+              Overview<span>:</span>
+            </h3>
+            </div>
             </div>
             <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card templat">
-                  <div class="request">
-                    <span class="ordIcon iconOrder1"><i class="bi bi-check-circle-fill"></i></span>
-                    <h4>Approved orders</h4>
-                    <p><span class="count">130 </span>Live</p>
-                  </div>
-                  <div class="request">
-                    <span class="ordIcon iconOrder1"><i class="bi bi-check-circle-fill"></i></span>
-                    <h4>Delivered orders</h4>
-                    <p><span class="count">130 </span>Live</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card templat">
-                  <div class="request">
-                    <span class="ordIcon iconOrder2"><i class="bi bi-x-circle-fill"></i></span>
-                    <h4>Rejected orders</h4>
-                    <p><span class="count">20 </span>Live</p>
-                  </div>
-                  <div class="request">
-                    <span class="ordIcon iconOrder2"><i class="bi bi-x-circle-fill"></i></span>
-                    <h4>Canceled orders</h4>
-                    <p><span class="count">20 </span>Live</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card templat">
-                  <div class="request">
-                    <span class="ordIcon iconOrder3"><i class="bi bi-clock-fill"></i></span>
-                    <h4>On the way</h4>
-                    <p><span class="count">252 </span>Live</p>
-                  </div>
-                  <div class="request">
-                    <span class="ordIcon iconOrder3"><i class="bi bi-clock-fill"></i></span>
-                    <h4>Pending orders</h4>
-                    <p><span class="count">252 </span>Live</p>
-                  </div>
-                </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="subCard overview active" id="cardOrders">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-start align-items-center"><i class='bx bxs-detail'></i> <span>Orders count</span></h5>
+                <p class="card-text">Total Orders :<span class="countOrders">252</span> <span class="upPer">+34% <i class='bx bx-up-arrow-alt'></i></span></p>
+                <span> Last week : 200</span>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-8">
-              <div class="content-wrapper">
-                <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
-              </div>                
             </div>
-            <div class="col-lg-4">
-              <div class="content-wrapper">
-              <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="subCard overview" id="cardOffers">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-start align-items-center"><i class='bx bxs-purchase-tag'></i> <span>Offers count</span></h5>
+                <p class="card-text">Total offers :<span class="countOrders">252</span></p>
+                <span> Last week : 200</span>
               </div>
             </div>
-          </div>
-      </section>
-      <!-- Offers Content-->
-      <section class="collapse multi-collapse" id="offers">
-        <div class="multiShows">
-          <div class="row">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="subCard overview" id="cardViews">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-start align-items-center"><i class="bi bi-eye-fill"></i> <span>Story views</span></h5>
+                <p class="card-text">Total views :<span class="countOrders">252</span> <span class="upPer">+34% <i class='bx bx-up-arrow-alt'></i></span></p>
+                <span> Last week : 200</span>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="subCard overview" id="cardClients">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-start align-items-center"><i class="bi bi-people-fill"></i><span>Clients count</span></h5>
+                <p class="card-text">Total Clients :<span class="countOrders">252</span> <span class="upPer">+34% <i class='bx bx-up-arrow-alt'></i></span></p>
+                <span> Last week : 200</span>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="subCard overview" id="cardProducts">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-start align-items-center"><i class="bi bi-columns-gap"></i> <span>Products count</span></h5>
+                <p class="card-text">Total product :<span class="countOrders">252</span></p>
+                <span> Last week : 200</span>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+            <!-- Orders Content-->
+            <section class="collapse multi-collapse" id="orders">
+            <div class="multiShows">
+            <div class="row">
             <div class="col-lg-12 head">
               <h3>
-                Offers Live Data<span>:</span>
+                Orders Live Data<span>:</span>
               </h3>
             </div>
-          </div>
-          <div class="row">
+            </div>
+            <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="card templat">
                 <div class="request">
                   <span class="ordIcon iconOrder1"><i class="bi bi-check-circle-fill"></i></span>
-                  <h4>Active orders</h4>
+                  <h4>Approved orders</h4>
+                  <p><span class="count">130 </span>Live</p>
+                </div>
+                <div class="request">
+                  <span class="ordIcon iconOrder1"><i class="bi bi-check-circle-fill"></i></span>
+                  <h4>Delivered orders</h4>
                   <p><span class="count">130 </span>Live</p>
                 </div>
               </div>
@@ -351,7 +161,12 @@
               <div class="card templat">
                 <div class="request">
                   <span class="ordIcon iconOrder2"><i class="bi bi-x-circle-fill"></i></span>
-                  <h4>Expired offers</h4>
+                  <h4>Rejected orders</h4>
+                  <p><span class="count">20 </span>Live</p>
+                </div>
+                <div class="request">
+                  <span class="ordIcon iconOrder2"><i class="bi bi-x-circle-fill"></i></span>
+                  <h4>Canceled orders</h4>
                   <p><span class="count">20 </span>Live</p>
                 </div>
               </div>
@@ -360,219 +175,278 @@
               <div class="card templat">
                 <div class="request">
                   <span class="ordIcon iconOrder3"><i class="bi bi-clock-fill"></i></span>
-                  <h4>Inactive offers</h4>
+                  <h4>On the way</h4>
+                  <p><span class="count">252 </span>Live</p>
+                </div>
+                <div class="request">
+                  <span class="ordIcon iconOrder3"><i class="bi bi-clock-fill"></i></span>
+                  <h4>Pending orders</h4>
                   <p><span class="count">252 </span>Live</p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8">
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-8">
             <div class="content-wrapper">
-              <canvas id="myChart3" style="width:100%;max-width:600px"></canvas>
+              <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
             </div>                
-          </div>
-          <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
+            <div class="content-wrapper">
+            <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+            </div>
+            </div>
+            </div>
+            </section>
+            <!-- Offers Content-->
+            <section class="collapse multi-collapse" id="offers">
+            <div class="multiShows">
+            <div class="row">
+            <div class="col-lg-12 head">
+            <h3>
+              Offers Live Data<span>:</span>
+            </h3>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card templat">
+              <div class="request">
+                <span class="ordIcon iconOrder1"><i class="bi bi-check-circle-fill"></i></span>
+                <h4>Active orders</h4>
+                <p><span class="count">130 </span>Live</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card templat">
+              <div class="request">
+                <span class="ordIcon iconOrder2"><i class="bi bi-x-circle-fill"></i></span>
+                <h4>Expired offers</h4>
+                <p><span class="count">20 </span>Live</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card templat">
+              <div class="request">
+                <span class="ordIcon iconOrder3"><i class="bi bi-clock-fill"></i></span>
+                <h4>Inactive offers</h4>
+                <p><span class="count">252 </span>Live</p>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-8">
+            <div class="content-wrapper">
+            <canvas id="myChart3" style="width:100%;max-width:600px"></canvas>
+            </div>                
+            </div>
+            <div class="col-lg-4">
             <div class="content-wrapper">
             <canvas id="myChart4" style="width:100%;max-width:600px"></canvas>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- views Content-->
-      <section class="collapse multi-collapse" id="views">
-        <div class="multiShows">
-          <div class="row">
-            <div class="col-12">
-              <div class="content-wrapper">
-              <canvas id="myChartViews"></canvas>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
+            </div>
+            </section>
+            <!-- views Content-->
+            <section class="collapse multi-collapse" id="views">
+            <div class="multiShows">
+            <div class="row">
+            <div class="col-12">
             <div class="content-wrapper">
-              <canvas id="myChart5"></canvas>
+            <canvas id="myChartViews"></canvas>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-6">
+            <div class="content-wrapper">
+            <canvas id="myChart5"></canvas>
             </div>                
-          </div>
-          <div class="col-lg-6">
+            </div>
+            <div class="col-lg-6">
             <div class="content-wrapper">
             <canvas id="myChart6"></canvas>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- clients Content-->
-      <section class="collapse multi-collapse" id="clients">
-        <div class="multiShows">
-          <div class="row">
+            </div>
+            </div>
+            </section>
+            <!-- clients Content-->
+            <section class="collapse multi-collapse" id="clients">
+            <div class="multiShows">
+            <div class="row">
             <div class="col-lg-12 head">
-              <h3>
-                Clients Live Data<span>:</span>
-              </h3>
+            <h3>
+              Clients Live Data<span>:</span>
+            </h3>
             </div>
-          </div>
-          <div class="row">
+            </div>
+            <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="card templat">
-                <div class="request">
-                  <span class="ordIcon iconOrder1"><i class="bi bi-check-circle-fill"></i></span>
-                  <h4>Active clients</h4>
-                  <p><span class="count">130 </span>Live</p>
-                </div>
+            <div class="card templat">
+              <div class="request">
+                <span class="ordIcon iconOrder1"><i class="bi bi-check-circle-fill"></i></span>
+                <h4>Active clients</h4>
+                <p><span class="count">130 </span>Live</p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="card templat">
-                <div class="request">
-                  <span class="ordIcon iconOrder2"><i class="bi bi-x-circle-fill"></i></span>
-                  <h4>Inactive clients</h4>
-                  <p><span class="count">20 </span>Live</p>
-                </div>
-              </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="card templat">
-                <div class="request">
-                  <span class="ordIcon iconOrder3"><i class="bi bi-clock-fill"></i></span>
-                  <h4>Blocked clients</h4>
-                  <p><span class="count">252 </span>Live</p>
-                </div>
+            <div class="card templat">
+              <div class="request">
+                <span class="ordIcon iconOrder2"><i class="bi bi-x-circle-fill"></i></span>
+                <h4>Inactive clients</h4>
+                <p><span class="count">20 </span>Live</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card templat">
+              <div class="request">
+                <span class="ordIcon iconOrder3"><i class="bi bi-clock-fill"></i></span>
+                <h4>Blocked clients</h4>
+                <p><span class="count">252 </span>Live</p>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-8">
             <div class="content-wrapper">
-              <canvas id="myChart7" style="width:100%;max-width:600px"></canvas>
+            <canvas id="myChart7" style="width:100%;max-width:600px"></canvas>
             </div>                
-          </div>
-          <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
             <div class="content-wrapper">
             <canvas id="myChart8" style="width:100%;max-width:600px"></canvas>
             </div>
-          </div>
-        </div>
-          <!-- Content Wrapper -->
-          <div class="content-wrapper">
+            </div>
+            </div>
+            <!-- Content Wrapper -->
+            <div class="content-wrapper">
             <div class="header-wrapper mb-2">
-              <div class="d-flex justify-content-between">
-                <div class="page-title">
-                  <h3>
-                    Most Effective Customers :
-                  </h3>
-                </div>
+            <div class="d-flex justify-content-between">
+              <div class="page-title">
+                <h3>
+                  Most Effective Customers :
+                </h3>
               </div>
             </div>
+            </div>
             <div id="content" class="content">
-              <div class="table-responsive">
-                <table id="table_orders" class="order-table">
-                  <thead>
-                    <tr>
-                      <th>User ID</th>
-                      <th>Order ID</th>
-                      <th>Surname</th>
-                      <th>Phone number</th>
-                      <th>Street address</th>
-                      <th>Total</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                        <td>#123543</td>
-                        <td>#123543</td>
-                        <td>Ayham Azzemah</td>
-                        <td>+965476543213</td>
-                        <td>Damascus, mashroo Dummar, is</td>
-                        <td class="totalClient">550$</td>
-                    </tr>
-                    <tr>
+            <div class="table-responsive">
+              <table id="table_orders" class="order-table">
+                <thead>
+                  <tr>
+                    <th>User ID</th>
+                    <th>Order ID</th>
+                    <th>Surname</th>
+                    <th>Phone number</th>
+                    <th>Street address</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
                       <td>#123543</td>
                       <td>#123543</td>
                       <td>Ayham Azzemah</td>
                       <td>+965476543213</td>
                       <td>Damascus, mashroo Dummar, is</td>
                       <td class="totalClient">550$</td>
-                    </tr>
-                    <tr>
+                  </tr>
+                  <tr>
                     <td>#123543</td>
                     <td>#123543</td>
                     <td>Ayham Azzemah</td>
                     <td>+965476543213</td>
                     <td>Damascus, mashroo Dummar, is</td>
                     <td class="totalClient">550$</td>
-                    </tr>
-                    <tr>
+                  </tr>
+                  <tr>
                   <td>#123543</td>
                   <td>#123543</td>
                   <td>Ayham Azzemah</td>
                   <td>+965476543213</td>
                   <td>Damascus, mashroo Dummar, is</td>
                   <td class="totalClient">550$</td>
-                    </tr>
-                </tbody>
-                </table>
-              </div>
+                  </tr>
+                  <tr>
+                <td>#123543</td>
+                <td>#123543</td>
+                <td>Ayham Azzemah</td>
+                <td>+965476543213</td>
+                <td>Damascus, mashroo Dummar, is</td>
+                <td class="totalClient">550$</td>
+                  </tr>
+              </tbody>
+              </table>
             </div>
-          </div>
-      </section>
-      <!-- products Content-->
-      <section class="collapse multi-collapse" id="products">
-        <div class="multiShows">
-          <div class="row">
+            </div>
+            </div>
+            </section>
+            <!-- products Content-->
+            <section class="collapse multi-collapse" id="products">
+            <div class="multiShows">
+            <div class="row">
             <div class="col-lg-12 head">
-              <h3>
-                Products Live Data<span>:</span>
-              </h3>
+            <h3>
+              Products Live Data<span>:</span>
+            </h3>
             </div>
-          </div>
-          <div class="row">
+            </div>
+            <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="card templat">
-                <div class="request">
-                  <span class="ordIcon iconOrder1"><i class="bi bi-check-circle-fill"></i></span>
-                  <h4>Active Products</h4>
-                  <p><span class="count">130 </span>products</p>
-                </div>
-                <div class="request">
-                  <span class="ordIcon iconOrder1"><i class="bi bi-check-circle-fill"></i></span>
-                  <h4>Available Products</h4>
-                  <p><span class="count">130 </span>products</p>
-                </div>
+            <div class="card templat">
+              <div class="request">
+                <span class="ordIcon iconOrder1"><i class="bi bi-check-circle-fill"></i></span>
+                <h4>Active Products</h4>
+                <p><span class="count">130 </span>products</p>
+              </div>
+              <div class="request">
+                <span class="ordIcon iconOrder1"><i class="bi bi-check-circle-fill"></i></span>
+                <h4>Available Products</h4>
+                <p><span class="count">130 </span>products</p>
               </div>
             </div>
+            </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="card templat">
-                <div class="request">
-                  <span class="ordIcon iconOrder2"><i class="bi bi-x-circle-fill"></i></span>
-                  <h4>Inactive Products</h4>
-                  <p><span class="count">20 </span>products</p>
-                </div>
-                <div class="request">
-                  <span class="ordIcon iconOrder2"><i class="bi bi-x-circle-fill"></i></span>
-                  <h4>Unavailable Products</h4>
-                  <p><span class="count">20 </span>products</p>
-                </div>
+            <div class="card templat">
+              <div class="request">
+                <span class="ordIcon iconOrder2"><i class="bi bi-x-circle-fill"></i></span>
+                <h4>Inactive Products</h4>
+                <p><span class="count">20 </span>products</p>
+              </div>
+              <div class="request">
+                <span class="ordIcon iconOrder2"><i class="bi bi-x-circle-fill"></i></span>
+                <h4>Unavailable Products</h4>
+                <p><span class="count">20 </span>products</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8">
+            </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-8">
             <div class="content-wrapper">
-              <canvas id="myChart9" style="width:100%;max-width:600px"></canvas>
+            <canvas id="myChart9" style="width:100%;max-width:600px"></canvas>
             </div>                
-          </div>
-          <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
             <div class="content-wrapper">
             <canvas id="myChart10" style="width:100%;max-width:600px"></canvas>
             </div>
-          </div>
+            </div>
+            </div>
+            </section>
         </div>
-      </section>
       </div>
     </div>
   </div>
@@ -611,6 +485,8 @@
   <script type="text/javascript" src="assets/main/js/searchFilter.js"></script>
   <!-- Main main Script -->
   <script type="text/javascript" src="assets/main/js/main.js"></script>
+  <!-- frequent-components -->
+  <script type="text/javascript" src="assets/main/js/Frequent-components/main.js"></script>
   <!-- Custom Script -->
   <script type="text/javascript" src="assets/main/js/custom.js"></script>
     <!--  chartOrders Script -->

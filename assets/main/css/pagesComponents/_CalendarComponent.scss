@@ -170,20 +170,37 @@ table#calendarTo tbody#calendar-body {
     vertical-align: top;
 	  background: $main-color;
 }
-
-.date-picker.selected {
+.date-picker {
+  position: relative;
     font-weight: bold;
-    background-color: $bg-color;
-    border-radius: 50%;
     width: 40px;
     height: 40px;
-    color: $main-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: $main-color;
 }
-
-
+.date-picker.selected {
+  background-color: $bg-color;
+  color: $main-color;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+td.date-picker span {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+}
+.date-picker:hover {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: $bg-color;
+  color: $main-color;
+  box-shadow: 0 15px 20px -3px rgba(171, 68, 255, 0.35);
+  transition: 0.3 all ease-in-out;
+}
 .button-container-calendar {
     position: relative;
     margin-bottom: 1em;

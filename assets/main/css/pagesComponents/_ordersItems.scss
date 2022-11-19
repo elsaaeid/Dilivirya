@@ -1,7 +1,6 @@
 div#content {
+    width: 100%;
     position: relative;
-
-
 
 .arrowBackIcon {
     margin-top: -22px;
@@ -34,10 +33,10 @@ legend {
 
     & h6 {
         margin: auto;
-        font-size: 20px;
+        font-size: 14px;
 
         @include extra-small {
-            font-size: 10px;
+            font-size: 9px;
         }
     }
 
@@ -95,7 +94,7 @@ select {
 	border-collapse: collapse;
 
 th span.download {
-        background: #009160;
+        background: $dark-green;
         font-size: 20px;
         text-align: center;
         padding: 6px;
@@ -105,24 +104,30 @@ th span.download {
 }
 }
 }
+.order-status {
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .select-items div, .select-selected {
-    background: #e6e6e6;
-    display: flex;
-    justify-content: center;
-
-    
+        background: $bg;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        width: 100%;
+ 
     @include extra-small {
         font-size: 8px;
-        width: 52px;
+        width: 100%;
     }
     @include very-very-small {
         font-size: 8px;
-        width: 52px;
+        width: 100%;
     }
     @include very-small {
-        font-size: 7px;
-        width: 64px;
+        font-size: 10px;
+        width: 100%;
      }
     }
 
@@ -135,30 +140,32 @@ option {
 }
 }
 .order-container-top {
+    display: none;
     position: absolute;
     display: none;
     top: 0px;
-    background: $main-color;
+    right: 0;
+    background: $lavender-light;
+    box-shadow: 0 0 0 1px #7952b354;
+    height: 101vh;
     width: 100%;
-    height: 100vh;
-
     .cancel-order {
-        border-radius: 50%;
         padding: 10px;
-        cursor: pointer;
-        border: 1px solid #e6e6e6;
-    }
+        position: relative;
+        width: 100%
+        
+}
 .client-content {
 
 
     @include extra-small {
-       padding-inline: 16px;
+       padding-inline: 0x;
     }
 
 .clientOrderInfo {
 .orderTotal {
-    background: #38b389;
-    color: #fff;
+    background: $dark-green;
+    color:  $bg;
     width: 90%;
     padding: 6px;
     margin: auto;
@@ -191,12 +198,23 @@ option {
 
 .clientInfo, .clientOrderInfo {
     border-radius: 9px;
-    border: 1px solid #e6e6e6;
-    width: 50%;
-    height: 96vh;
+    border: 1px solid $bg;
+    width: 14rem;
+    height:  87vh;
+
+    @include extra-small {
+        width: 8rem;
+    }
+    @include very-small {
+        width: 11rem;
+    }
 }
-
-
+#client-info{
+    right: 0;
+}
+#client-order{
+    left: 0;
+}
 span.mapIcon {
     background-color: $gold-light;
     color: $gold;
@@ -232,7 +250,7 @@ span.userIcon {
 }
 .input-group.inputProps input {
     border: none;
-    background:  $grey-dark;
+    background:   $bg;
 }
 
 .inputGroupContainer {
@@ -246,7 +264,7 @@ span.userIcon {
      }
 }
 .input-group.TimeinputProps input {
-    background: $grey-dark;
+    background:  $bg;
     border: none;
     padding: 8px;
     margin: auto;
@@ -256,7 +274,7 @@ span.userIcon {
      }
 }
 textarea.form-control.inputProps {
-    background: $grey-dark;
+    background:  $bg;
     border: none;
     padding: 8px;
     margin: auto;

@@ -25,364 +25,239 @@
   <div class="page-wrapper">
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar">
-      <div class="logo-wrapper text-center">
-        <img src="assets/images/logo.png" alt="logo" />
-        <h4 class="text-light">Dilivirya</h4>
-      </div>
-      <ul class="side-list list-unstyled text-light">
-        <li>
-          <a href="./index.html" class="main-link">
-            <span class="icon icon-dashboard"></span>
-            <span class="text">dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="./orders.html" class="main-link">
-            <span class="icon icon-orders"></span>
-            <span class="text">orders</span>
-          </a>
-        </li>
-        <li>
-          <a href="/#" class="main-link">
-            <span class="icon icon-admins"></span>
-            <span class="text">admins</span>
-          </a>
-        </li>
-        <li class="dropdown">
-          <a class="main-link collapsed" data-bs-toggle="collapse" href="/#" role="button" aria-expanded="false" aria-controls="inventory">
-            <span class="icon icon-inventory"></span>
-              <span class="text">inventory</span>
-          </a>
-
-          <ul class="collapse multi-collapse" id="inventory">
-            <li><a href="">Classifications</a></li>
-            <li><a href="">Unit of Measurement</a></li>
-            <li><a href="">Warehouses</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Inventory count</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="main-link collapsed" data-bs-toggle="collapse" href="/#" role="button" aria-expanded="false" aria-controls="Marketing">
-            <span class="icon icon-Marketing"></span>
-              <span class="text">Marketing</span>
-          </a>
-
-          <ul class="collapse multi-collapse" id="Marketing">
-            <li><a href="">Coupons</a></li>
-            <li><a href="">Offers</a></li>
-            <li><a href="">Push Notifications</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-Clients"></span>
-            <span class="text">Clients</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-stories"></span>
-            <span class="text">stories</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-profile"></span>
-            <span class="text">my profile</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-customer"></span>
-            <span class="text">customer support</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-settings"></span>
-            <span class="text">general settings</span>
-          </a>
-        </li>
-      </ul>
+      
     </div>
     <!-- Page content -->
     <div id="page-content" class="page-content">
       <!-- NavBar -->
-      <nav class="navbar">
-        <div class="container-fluid p-0">
-          <div class="top-nav w-100 d-flex flex-row justify-content-between align-items-center d-sm-flex d-md-none d-lg-none d-xl-none d-xxl-none">
-            <span class="navbar-brand mb-0 h1">
-              <img src="assets/images/logo.png" alt="logo" />
-            </span>
-            <a class="btn btn-gold" role="button" id="menu-toggle"><i class="bi bi-list"></i></a>
-          </div>
-          <div class="nav-main w-100">
-            <div class="row">
-              <div class="col-md-9 col-sm-8">
-                <div class="input-group mb-3">
-                  <button class="btn btn-lavender" type="button" id="button-search">                    
-                  </button>
-                  <input type="text" onkeyup="myFunction()" class="form-control" id="myInput" placeholder="Search ..." aria-label="" aria-describedby="button-search">                 
-                </div>
-                <div class="search-content">
-                  <ul id="myUL">
-                    <li><a href="#">Adele</a></li>
-                    <li><a href="#">Agnes</a></li>
-                  
-                    <li><a href="#">Billy</a></li>
-                    <li><a href="#">Bob</a></li>
-                  
-                    <li><a href="#">Calvin</a></li>
-                    <li><a href="#">Christina</a></li>
-                    <li><a href="#">Cindy</a></li>
-                  </ul>
-                </div> 
-              </div>
-              <div class="col-md-3 col-sm-4">
-                <div class="nav-group mb-3 d-flex">
-                  <div class="user-menu">
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0">
-                        <img src="assets/images/users/user.png" alt="user image">
-                      </div>
-                      <div class="flex-grow-1 mx-1">
-                        <span class="user-name">Kenan JADDENE</span>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="btn btn-gold" type="button" id="button-notification">
-                    <span class="bg-danger bill"></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <nav class="navbar" id="navbar">
+       
       </nav>
-      <!-- Content Wrapper -->
-      <div class="content-wrapperOrder">
-        <div class="header-wrapper mb-2">
-          <div class="d-flex flex-row justify-content-around align-items-center">
-            <div class="order-title cursor-pointer">
-              <h3>
-                Orders Details
-              </h3>
-            </div>
-            <div class="orderUpdate" onclick="orderShower()">
-                <button>
-                  Update
-                </button>
-            </div>
-          </div>
-        </div>
-
-        <div id="content" class="content">
-          <div class="table-responsive">
-          <table id="table_orders" class="order-table">
-            <thead>
-              <tr>
-                <th>img</th>
-                <th> Item Description</th>
-                <th>Unit Price</th>
-                <th>Qty</th>
-                <th>Total</th>
-                <th><span class="download"><i class="bi bi-box-arrow-in-down"></i></span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr id="toOrderInfo">
-                <td><img src="./assets/images/stories/s-01.png" /></td>
-                <td>Fruits salad salad</td>
-                <td class="d-flex flex-column">4,500</td>
-                <td>2 KG</td>
-                <td>2 KG</td>
-                <td>100,000.22</td>
-              </tr>  
-              <tr  id="toOrderInfo">
-                <td><img src="./assets/images/stories/s-01.png" /></td>
-                <td>Fruits salad salad</td>
-                <td class="d-flex flex-column">4,500</td>
-                <td>2 KG</td>
-                <td>2 KG</td>
-                <td>100,000.22</td>
-              </tr> 
-               <tr id="toOrderInfo">
-                <td><img src="./assets/images/stories/s-01.png" /></td>
-                <td>Fruits salad salad</td>
-                <td class="d-flex flex-column">4,500</td>
-                <td>2 KG</td>
-                <td>2 KG</td>
-                <td>100,000.22</td>
-              </tr>  
-              <tr id="toOrderInfo">
-                <td><img src="./assets/images/stories/s-01.png" /></td>
-                <td>Fruits salad salad</td>
-                <td class="d-flex flex-column">4,500</td>
-                <td>2 KG</td>
-                <td>2 KG</td>
-                <td>100,000.22</td>
-              </tr>            
-              <tr id="toOrderInfo">
-                <td><img src="./assets/images/stories/s-01.png" /></td>
-                <td>Fruits salad salad</td>
-                <td class="d-flex flex-column">4,500</td>
-                <td>2 KG</td>
-                <td>2 KG</td>
-                <td>100,000.22</td>
-              </tr>          
-              <tr id="toOrderInfo">
-                <td><img src="./assets/images/stories/s-01.png" /></td>
-                <td>Fruits salad salad</td>
-                <td class="d-flex flex-column">4,500</td>
-                <td>2 KG</td>
-                <td>2 KG</td>
-                <td>100,000.22</td>
-              </tr>  
-              <tr id="toOrderInfo">
-                <td><img src="./assets/images/stories/s-01.png" /></td>
-                <td>Fruits salad salad</td>
-                <td class="d-flex flex-column">4,500</td>
-                <td>2 KG</td>
-                <td>2 KG</td>
-                <td>100,000.22</td>
-              </tr>  
-              <tr id="toOrderInfo">
-                <td><img src="./assets/images/stories/s-01.png" /></td>
-                <td>Fruits salad salad</td>
-                <td class="d-flex flex-column">4,500</td>
-                <td>2 KG</td>
-                <td>2 KG</td>
-                <td>100,000.22</td>
-              </tr>  
-              <tr id="toOrderInfo">
-                <td><img src="./assets/images/stories/s-01.png" /></td>
-                <td>Fruits salad salad</td>
-                <td class="d-flex flex-column">4,500</td>
-                <td>2 KG</td>
-                <td>2 KG</td>
-                <td>100,000.22</td>
-              </tr>              
-            </tbody>
-          </table>
-          </div>
-
-          
-            <div class="order-container-top flex-column align-items-center" id="orderContainer">
-              <div class="cancel-order mt-3 d-flex flex-row justify-content-between align-items-center" onclick="orderHider()">
-                <spa>cancel</spa>
-                <i class="bi bi-x-circle"></i>
+      <div class="content" id="content">
+        <!-- Content Wrapper -->
+        <div class="content-wrapperOrder">
+          <div class="header-wrapper mb-2">
+            <div class="d-flex flex-row justify-content-around align-items-center">
+              <div class="order-title cursor-pointer">
+                <h3>
+                  Orders Details
+                </h3>
               </div>
-              <div class="client-content d-flex flex-row justify-content-center align-items-center">
-                <div class="clientInfo my-3 mx-3">
-                  <form class="well form-horizontal" action="" method="post"  id="contact_form">
-                    <fieldset>
-                    <legend class="my-3 d-flex flex-row justify-content-around align-items-center">
-                        <h6>Client info</h6>
-                        <div class="info-icons">
-                          <span class="mapIcon sameProps"><i class="bi bi-geo-alt-fill"></i></span>
-                          <span class="userIcon sameProps"><i class="bi bi-person-fill"></i></span>
-                        </div>
-                    </legend>
-                    <div class="clientBody d-flex flex-column justify-content-center align-items-center">
-                        <!-- Text input-->
-                    <div class="form-group">
-                      <div class="inputGroupContainer">
-                      <div class="input-group inputProps">
-                      <input  name="full_name" placeholder="Client full name" class="form-control"  type="text">
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Text input-->            
-                    <div class="form-group">
-                        <div class="col-md-4 inputGroupContainer">
+              <div class="orderUpdate" onclick="orderShower()">
+                  <button>
+                    Update
+                  </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="content" class="content">
+            <div class="table-responsive">
+            <table id="table_orders" class="order-table">
+              <thead>
+                <tr>
+                  <th>img</th>
+                  <th> Item Description</th>
+                  <th>Unit Price</th>
+                  <th>Qty</th>
+                  <th>Total</th>
+                  <th><span class="download"><i class="bi bi-box-arrow-in-down"></i></span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="toOrderInfo">
+                  <td><img src="./assets/images/stories/s-01.png" /></td>
+                  <td>Fruits salad salad</td>
+                  <td class="d-flex flex-column">4,500</td>
+                  <td>2 KG</td>
+                  <td>2 KG</td>
+                  <td>100,000.22</td>
+                </tr>  
+                <tr  id="toOrderInfo">
+                  <td><img src="./assets/images/stories/s-01.png" /></td>
+                  <td>Fruits salad salad</td>
+                  <td class="d-flex flex-column">4,500</td>
+                  <td>2 KG</td>
+                  <td>2 KG</td>
+                  <td>100,000.22</td>
+                </tr> 
+                <tr id="toOrderInfo">
+                  <td><img src="./assets/images/stories/s-01.png" /></td>
+                  <td>Fruits salad salad</td>
+                  <td class="d-flex flex-column">4,500</td>
+                  <td>2 KG</td>
+                  <td>2 KG</td>
+                  <td>100,000.22</td>
+                </tr>  
+                <tr id="toOrderInfo">
+                  <td><img src="./assets/images/stories/s-01.png" /></td>
+                  <td>Fruits salad salad</td>
+                  <td class="d-flex flex-column">4,500</td>
+                  <td>2 KG</td>
+                  <td>2 KG</td>
+                  <td>100,000.22</td>
+                </tr>            
+                <tr id="toOrderInfo">
+                  <td><img src="./assets/images/stories/s-01.png" /></td>
+                  <td>Fruits salad salad</td>
+                  <td class="d-flex flex-column">4,500</td>
+                  <td>2 KG</td>
+                  <td>2 KG</td>
+                  <td>100,000.22</td>
+                </tr>          
+                <tr id="toOrderInfo">
+                  <td><img src="./assets/images/stories/s-01.png" /></td>
+                  <td>Fruits salad salad</td>
+                  <td class="d-flex flex-column">4,500</td>
+                  <td>2 KG</td>
+                  <td>2 KG</td>
+                  <td>100,000.22</td>
+                </tr>  
+                <tr id="toOrderInfo">
+                  <td><img src="./assets/images/stories/s-01.png" /></td>
+                  <td>Fruits salad salad</td>
+                  <td class="d-flex flex-column">4,500</td>
+                  <td>2 KG</td>
+                  <td>2 KG</td>
+                  <td>100,000.22</td>
+                </tr>  
+                <tr id="toOrderInfo">
+                  <td><img src="./assets/images/stories/s-01.png" /></td>
+                  <td>Fruits salad salad</td>
+                  <td class="d-flex flex-column">4,500</td>
+                  <td>2 KG</td>
+                  <td>2 KG</td>
+                  <td>100,000.22</td>
+                </tr>  
+                <tr id="toOrderInfo">
+                  <td><img src="./assets/images/stories/s-01.png" /></td>
+                  <td>Fruits salad salad</td>
+                  <td class="d-flex flex-column">4,500</td>
+                  <td>2 KG</td>
+                  <td>2 KG</td>
+                  <td>100,000.22</td>
+                </tr>              
+              </tbody>
+            </table>
+            </div>
+
+            
+              <div class="order-container-top flex-column align-items-center" id="orderContainer">
+                <div class="cancel-order mt-3 d-flex flex-row justify-content-around align-items-center" onclick="orderHider()">
+                  <span class="cursor-pointer">cancel</span>
+                  <i class="bi bi-x-circle cursor-pointer"></i>
+                </div>
+                <div class="client-content position-relative d-flex flex-row justify-content-center align-items-center">
+                  <div class="clientInfo position-absolute top-0 right-0 " id="client-info">
+                    <form class="well form-horizontal" action="" method="post"  id="contact_form">
+                      <fieldset>
+                      <legend class="my-3 d-flex flex-row justify-content-around align-items-center">
+                          <h6>Client info</h6>
+                          <div class="info-icons">
+                            <span class="mapIcon sameProps"><i class="bi bi-geo-alt-fill"></i></span>
+                            <span class="userIcon sameProps"><i class="bi bi-person-fill"></i></span>
+                          </div>
+                      </legend>
+                      <div class="clientBody d-flex flex-column justify-content-center align-items-center">
+                          <!-- Text input-->
+                      <div class="form-group">
+                        <div class="inputGroupContainer">
                         <div class="input-group inputProps">
-                          <input name="phone" placeholder="Nmber" class="form-control" type="text">
+                        <input  name="full_name" placeholder="Client full name" class="form-control"  type="text">
+                          </div>
                         </div>
                       </div>
-                    </div>        
-                    <!-- Text input-->
-                    <div class="form-group">
-                      <div class="inputGroupContainer d-flex flex-column">
-                        <div class="input-group TimeinputProps">
-                          <input type="date" name="date" placeholder="Order Date" value="2022-03-21" min="2017-01-01" max="2019-01-01">
+                      <!-- Text input-->            
+                      <div class="form-group">
+                          <div class="col-md-4 inputGroupContainer">
+                          <div class="input-group inputProps">
+                            <input name="phone" placeholder="Nmber" class="form-control" type="text">
+                          </div>
                         </div>
-                        <div class="input-group TimeinputProps">
-                          <input type="time" name="time" value="10:30" />   
+                      </div>        
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="inputGroupContainer d-flex flex-column">
+                          <div class="input-group TimeinputProps">
+                            <input type="date" name="date" placeholder="Order Date" value="2022-03-21" min="2017-01-01" max="2019-01-01">
+                          </div>
+                          <div class="input-group TimeinputProps">
+                            <input type="time" name="time" value="10:30" />   
+                          </div>
+                        </div>
+                      </div>                  
+                      <!-- Text input-->                
+                      <div class="form-group">
+                          <div class="col-md-4 inputGroupContainer">
+                          <div class="input-group inputProps">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                              <input name="city" placeholder="City" class="form-control"  type="text">
+                          </div>
                         </div>
                       </div>
-                    </div>                  
-                    <!-- Text input-->                
-                    <div class="form-group">
+                      <!-- Text input-->
+                      <div class="form-group">
                         <div class="col-md-4 inputGroupContainer">
                         <div class="input-group inputProps">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                            <input name="city" placeholder="City" class="form-control"  type="text">
+                            <input name="Province" placeholder="Province" class="form-control"  type="text">
                         </div>
                       </div>
                     </div>
-                     <!-- Text input-->
-                     <div class="form-group">
-                      <div class="col-md-4 inputGroupContainer">
-                      <div class="input-group inputProps">
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                          <input name="Province" placeholder="Province" class="form-control"  type="text">
+                      <!-- Text input-->
+                      <div class="form-group">
+                          <div class="col-md-4 inputGroupContainer d-flex flex-column">
+                          <div class="input-group inputProps">
+                        <input name="address" placeholder="Detailed Address" class="form-control" type="text">
+                          </div>
                       </div>
-                    </div>
+                      <!-- Text area -->         
+                      <div class="form-group">
+                          <div class="col-md-4 inputGroupContainer">
+                          <div class="input-group inputProps">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                  <textarea class="form-control inputProps" name="comment" placeholder="More Details"></textarea>
+                        </div>
+                        </div>
+                      </div>
+                        </div>  
+                      </div>                       
+                      </fieldset>
+                    </form>      
                   </div>
-                    <!-- Text input-->
-                    <div class="form-group">
-                        <div class="col-md-4 inputGroupContainer d-flex flex-column">
-                        <div class="input-group inputProps">
-                      <input name="address" placeholder="Detailed Address" class="form-control" type="text">
-                        </div>
+                  <div class="clientOrderInfo position-absolute top-0 left-0 " id="client-order">
+                    <legend class="my-3 d-flex flex-row justify-content-around align-items-center">
+                      <h6>Order info</h6>
+                      <span class="downloadIcon sameProps"><i class="bi bi-box-arrow-in-down"></i></span>
+                    </legend>
+                    <div class="orderTotal d-flex flex-row justify-content-evenly align-items-center"><h6>Total</h6><span>100,00.22</span></div>
+                    <div class="order-status mt-3 d-flex flex-col justify-content-center align-items-center">
+                      <div class="calender-status"> 
+                        <select id="extra-select">
+                          <option value="0" class="aprrove" style="background-color: green; color: white;"><a href="">Approve</a></option>
+                          <option value="1" class="reject" style="background-color: red; color: white;"><a href="">Reject order</a></option>
+                          <option value="2"><a href="">Pending</a></option>
+                          <option value="3"><a href="">preparing</a></option>
+                          <option value="4"><a href=""><i class="bi bi-circle-fill"></i>On the way</a></option>
+                          <option value="5"><a href="">Delivered</a></option>
+                        </select>                        
+                      </div>    
+                      <div class="calender-status mt-5">
+                        <select id="extra-select">
+                          <option value="0">This week</option>
+                          <option value="1">Today</option>
+                          <option value="2">This week</option>
+                          <option value="3">This month</option>
+                          <option value="4">This year</option>
+                        </select>
+                      </div> 
                     </div>
-                    <!-- Text area -->         
-                    <div class="form-group">
-                        <div class="col-md-4 inputGroupContainer">
-                        <div class="input-group inputProps">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea class="form-control inputProps" name="comment" placeholder="More Details"></textarea>
-                      </div>
-                      </div>
-                    </div>
-                      </div>  
-                    </div>                       
-                    </fieldset>
-                  </form>      
-                </div>
-                <div class="clientOrderInfo my-3 mx-3">
-                  <legend class="my-3 d-flex flex-row justify-content-around align-items-center">
-                    <h6>Order info</h6>
-                    <span class="downloadIcon sameProps"><i class="bi bi-box-arrow-in-down"></i></span>
-                  </legend>
-                  <div class="orderTotal d-flex flex-row justify-content-evenly align-items-center"><h6>Total</h6><span>100,00.22</span></div>
-                  <div class="order-status mt-3 d-flex flex-row justify-content-center align-items-center">
-                    <div class="calender-status"> 
-                      <select id="extra-select">
-                        <option value="0"><a href="" style="color: rgb(0, 177, 74);">Approve</a></option>
-                        <option value="1"><a href="" style="color: rgb(197, 26, 26);">Reject order</a></option>
-                        <option value="2"><a href="">Pending</a></option>
-                        <option value="3"><a href="">preparing</a></option>
-                        <option value="4"><a href=""><i class="bi bi-circle-fill"></i>On the way</a></option>
-                        <option value="5"><a href="">Delivered</a></option>
-                      </select>                        
-                    </div>    
-                    <div class="calender-status">
-                      <select id="extra-select">
-                        <option value="0">This week</option>
-                        <option value="1">Today</option>
-                        <option value="2">This week</option>
-                        <option value="3">This month</option>
-                        <option value="4">This year</option>
-                      </select>
-                    </div> 
                   </div>
                 </div>
               </div>
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
       </div>
     </div>
   </div>
@@ -419,6 +294,8 @@
   <script type="text/javascript" src="assets/plugins/pdfMake/vfs_fonts.js"></script>
   <!-- searchFilter Script -->
   <script type="text/javascript" src="assets/main/js/searchFilter.js"></script>
+    <!-- frequent-components -->
+    <script type="text/javascript" src="assets/main/js/Frequent-components/main.js"></script>
   <!-- Main main Script -->
   <script type="text/javascript" src="assets/main/js/main.js"></script>
   <!-- Custom Script -->

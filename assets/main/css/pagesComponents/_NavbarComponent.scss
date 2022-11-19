@@ -75,13 +75,17 @@
 	position: relative;
 	margin-left: auto;
 	.bill{
-		display: block;
-		width: 12px;
-		height: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+		font-size: 11px;
+		height: 50%;
 		border-radius: 50%;
 		position: absolute;
 		top: 5px;
 		right: 5px;
+		color: $bg;
 	}
   }
 }

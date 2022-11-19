@@ -59,7 +59,6 @@ function choice1(){
         currentMonth1 = parseInt(selectMonth1.value);
         showCalendar1(currentMonth1, currentYear1);
     });
-    
 }
 
 var fromMonthAndYear = document.getElementById("fromMonthAndYear");
@@ -105,6 +104,7 @@ function showCalendar1(month, year) {
 
                 if ( date === today.getDate() && year === today.getFullYear() && month === today.getMonth() ) {
                     cell.className = "date-picker selected";
+                    
                 }
                 row.appendChild(cell);
                 date++;
@@ -193,6 +193,7 @@ function showCalendar2(month, year) {
 
                 if ( date === today.getDate() && year === today.getFullYear() && month === today.getMonth() ) {
                     cell.className = "date-picker selected";
+                    activeLink();
                 }
                 row.appendChild(cell);
                 date++;
@@ -203,19 +204,25 @@ function showCalendar2(month, year) {
 
         tbl.appendChild(row);
     }
+    
+  /*-----------------CardsOverview----------------------*/
+
+const card = document.querySelectorAll(".overview");
+function activeLink() {
+  card.forEach((item) =>
+  item.classList.remove('active'));
+  this.classList.add('active')
+}
+card.forEach((item) =>
+  item.addEventListener('click',activeLink));
 
 }
-
-
-
-
-
-
-
 
 function daysInMonth(iMonth, iYear) {
     return 32 - new Date(iYear, iMonth, 32).getDate();
 }
+
+
 
 
 

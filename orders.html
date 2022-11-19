@@ -25,144 +25,18 @@
   <div class="page-wrapper">
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar">
-      <div class="logo-wrapper text-center">
-        <img src="assets/images/logo.png" alt="logo" />
-        <h4 class="text-light">Dilivirya</h4>
-      </div>
-      <ul class="side-list list-unstyled text-light">
-        <li>
-          <a href="./index.html" class="main-link">
-            <span class="icon icon-dashboard"></span>
-            <span class="text">dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="./orders.html" class="main-link">
-            <span class="icon icon-orders"></span>
-            <span class="text">orders</span>
-          </a>
-        </li>
-        <li>
-          <a href="/#" class="main-link">
-            <span class="icon icon-admins"></span>
-            <span class="text">admins</span>
-          </a>
-        </li>
-        <li class="dropdown">
-          <a class="main-link collapsed" data-bs-toggle="collapse" href="/#" role="button" aria-expanded="false" aria-controls="inventory">
-            <span class="icon icon-inventory"></span>
-              <span class="text">inventory</span>
-          </a>
-
-          <ul class="collapse multi-collapse" id="inventory">
-            <li><a href="">Classifications</a></li>
-            <li><a href="">Unit of Measurement</a></li>
-            <li><a href="">Warehouses</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Inventory count</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="main-link collapsed" data-bs-toggle="collapse" href="/#" role="button" aria-expanded="false" aria-controls="Marketing">
-            <span class="icon icon-Marketing"></span>
-              <span class="text">Marketing</span>
-          </a>
-
-          <ul class="collapse multi-collapse" id="Marketing">
-            <li><a href="">Coupons</a></li>
-            <li><a href="">Offers</a></li>
-            <li><a href="">Push Notifications</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-Clients"></span>
-            <span class="text">Clients</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-stories"></span>
-            <span class="text">stories</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-profile"></span>
-            <span class="text">my profile</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-customer"></span>
-            <span class="text">customer support</span>
-          </a>
-        </li>
-        <li>
-          <a href="" class="main-link">
-            <span class="icon icon-settings"></span>
-            <span class="text">general settings</span>
-          </a>
-        </li>
-      </ul>
+      
     </div>
     <!-- Page content -->
     <div id="page-content" class="page-content">
       <!-- NavBar -->
-      <nav class="navbar">
-        <div class="container-fluid p-0">
-          <div class="top-nav w-100 d-flex flex-row justify-content-between align-items-center d-sm-flex d-md-none d-lg-none d-xl-none d-xxl-none">
-            <span class="navbar-brand mb-0 h1">
-              <img src="assets/images/logo.png" alt="logo" />
-            </span>
-            <a class="btn btn-gold" role="button" id="menu-toggle"><i class="bi bi-list"></i></a>
-          </div>
-          <div class="nav-main w-100">
-            <div class="row">
-              <div class="col-md-9 col-sm-8">
-                <div class="input-group mb-3">
-                  <button class="btn btn-lavender" type="button" id="button-search">                    
-                  </button>
-                  <input type="text" onkeyup="myFunction()" class="form-control" id="myInput" placeholder="Search ..." aria-label="" aria-describedby="button-search">                 
-                </div>
-                <div class="search-content">
-                  <ul id="myUL">
-                    <li><a href="#">Adele</a></li>
-                    <li><a href="#">Agnes</a></li>
-                  
-                    <li><a href="#">Billy</a></li>
-                    <li><a href="#">Bob</a></li>
-                  
-                    <li><a href="#">Calvin</a></li>
-                    <li><a href="#">Christina</a></li>
-                    <li><a href="#">Cindy</a></li>
-                  </ul>
-                </div> 
-              </div>
-              <div class="col-md-3 col-sm-4">
-                <div class="nav-group mb-3 d-flex">
-                  <div class="user-menu">
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0">
-                        <img src="assets/images/users/user.png" alt="user image">
-                      </div>
-                      <div class="flex-grow-1 mx-1">
-                        <span class="user-name">Kenan JADDENE</span>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="btn btn-gold" type="button" id="button-notification">
-                    <span class="bg-danger bill"></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <nav id="navbar" class="navbar">
+        
       </nav>
+      <div class="content" id="content">
       <!-- header-wrapper -->
-      <div class="header-wrapper mb-2 d-flex flex-row justify-content-between align-items-center">
-        <div class="page-title d-flex justify-content-lg-start">
+      <div class="header-wrapper mb-2 d-flex flex-row justify-content-around align-items-center">
+        <div class="page-title d-flex flex-row justify-content-around align-items-center">
           <h3>
             Orders
           </h3>
@@ -172,14 +46,18 @@
             <h4>Pending orders</h4>
             <span class=""><i class="bi bi-x-circle-fill"></i></span>
           </div>
-          <div class="filterButton d-flex flex-row justify-content-between align-items-center">
+          <div id="filterShow" class="filterButton d-flex flex-row justify-content-between align-items-center">
             <h4>Filter</h4>
             <span><i class="bi bi-funnel-fill"></i></span>
           </div>
         </div>
       </div>
       <!-- Content Wrapper -->
-      <div class="content-wrapper">
+      <div class="content-wrapper d-flex flex-col align-baseline justify-center ">
+        <div class="input-group" id="toggleFilter">
+          <button class="btn btn-lavender" type="button" id="button-search"></button>
+          <input type="text" class="form-control" id="filterInput" onkeyup="myFilter()" placeholder="Search for product...">
+        </div>
         <div id="content" class="content">
           <div class="table-responsive">
             <table id="table_orders" class="order-table">
@@ -196,7 +74,7 @@
                   <th><span class="download"><i class="bi bi-box-arrow-in-down"></i></span></th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="myProducts">
                 <tr>
                   <td><a href="ordersitem.html"><i class='bx bxs-chevron-right'></i><span style="border-bottom: 1px solid gray;">341234</span></a></td>
                   <td>name</td>
@@ -254,7 +132,18 @@
                 </tr>  
                 <tr>
                   <td><a href="ordersitem.html"><i class='bx bxs-chevron-right'></i><span style="border-bottom: 1px solid gray;">341234</span></a></td>
-                  <td>name</td>
+                  <td>safwaat</td>
+                  <td>giza</td>
+                  <td>str33</td>
+                  <td>Feb 24, 2022<span>10:00AM</span></td>
+                  <td class="Immediately">Immediately</td>
+                  <td>2.230,25</td>
+                  <td><i class="bi bi-record-circle-fill"></i><span>Pending</span></td>
+                  <td><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>  
+                <tr>
+                  <td><a href="ordersitem.html"><i class='bx bxs-chevron-right'></i><span style="border-bottom: 1px solid gray;">341234</span></a></td>
+                  <td>said</td>
                   <td>Alexandria</td>
                   <td>Sidi Beshr</td>
                   <td>Feb 24, 2022<span>10:00AM</span></td>
@@ -265,8 +154,8 @@
                 </tr>  
                 <tr>
                   <td><a href="ordersitem.html"><i class='bx bxs-chevron-right'></i><span style="border-bottom: 1px solid gray;">341234</span></a></td>
-                  <td>name</td>
-                  <td>Alexandria</td>
+                  <td>mohamed</td>
+                  <td>elmansoura</td>
                   <td>Sidi Beshr</td>
                   <td>Feb 24, 2022<span>10:00AM</span></td>
                   <td class="Immediately">Immediately</td>
@@ -276,20 +165,9 @@
                 </tr>  
                 <tr>
                   <td><a href="ordersitem.html"><i class='bx bxs-chevron-right'></i><span style="border-bottom: 1px solid gray;">341234</span></a></td>
-                  <td>name</td>
-                  <td>Alexandria</td>
-                  <td>Sidi Beshr</td>
-                  <td>Feb 24, 2022<span>10:00AM</span></td>
-                  <td class="Immediately">Immediately</td>
-                  <td>2.230,25</td>
-                  <td><i class="bi bi-record-circle-fill"></i><span>Pending</span></td>
-                  <td><i class="bi bi-three-dots-vertical"></i></td>
-                </tr>  
-                <tr>
-                  <td><a href="ordersitem.html"><i class='bx bxs-chevron-right'></i><span style="border-bottom: 1px solid gray;">341234</span></a></td>
-                  <td>name</td>
-                  <td>Alexandria</td>
-                  <td>Sidi Beshr</td>
+                  <td>ahmed</td>
+                  <td>cairo</td>
+                  <td>23str</td>
                   <td>Feb 24, 2022<span>10:00AM</span></td>
                   <td class="Immediately">Immediately</td>
                   <td>2.230,25</td>
@@ -300,6 +178,7 @@
             </table>
           </div>
         </div>
+      </div>
       </div>
       </div>
     </div>
@@ -339,9 +218,41 @@
   <script type="text/javascript" src="assets/main/js/searchFilter.js"></script>
   <!-- Main main Script -->
   <script type="text/javascript" src="assets/main/js/main.js"></script>
+    <!-- frequent-components -->
+    <script type="text/javascript" src="assets/main/js/Frequent-components/main.js"></script>
   <!-- Custom Script -->
   <script type="text/javascript" src="assets/main/js/custom.js"></script>
+  <script>
+    function myFilter() {
+        var input, filter, tbody, tr, td, i, txtValue;
+        input = document.getElementById("filterInput");
+        filter = input.value.toUpperCase();
+        tbody = document.getElementById("myProducts");
+        tr = tbody.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[i];
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+    
+    
+    var filterShow = document.getElementById("filterShow");
 
+filterShow.addEventListener('click', demoDisplay);
+  function demoDisplay() {
+    var toggleFilter = document.getElementById("toggleFilter");
+    if (toggleFilter.style.display == 'none') {
+        toggleFilter.style.display = 'flex';
+    } else {
+        toggleFilter.style.display = 'none';
+    }
+}
+    </script>
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
